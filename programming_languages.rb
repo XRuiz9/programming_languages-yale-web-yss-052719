@@ -5,12 +5,12 @@ def reformat_languages(languages)
       info.each do |type, typev|
         if new_hash[lang][:style}.size] == 1
           new_hash[lang][:style] << style
-        end
-        
+        else
         new_hash[lang] = {
           type: typev,
           style: [style]
         }
+        end
       end
     end
   end
