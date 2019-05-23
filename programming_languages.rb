@@ -7,6 +7,7 @@ def reformat_languages(languages)
           type: typev
           style: []
         }
+        new_hash[lang][:style] << style
       end
     end
   end
