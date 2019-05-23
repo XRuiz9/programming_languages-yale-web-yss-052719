@@ -6,6 +6,7 @@ def reformat_languages(languages)
         if new_hash[lang][:style}.size] == 1
           new_hash[lang][:style] << style
         end
+        
         new_hash[lang] = {
           type: typev,
           style: [style]
