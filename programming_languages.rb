@@ -8,7 +8,7 @@ def reformat_languages(languages)
         else
         new_hash[lang] = {
           type: typev,
-          style: [style]
+          style: []
         }
         end
 
