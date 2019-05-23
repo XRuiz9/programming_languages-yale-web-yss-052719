@@ -3,11 +3,14 @@ def reformat_languages(languages)
   languages.each do |style, langs|
     langs.each do |lang, info|
       info.each do |type, typev|
+        if new_hash[lang][:style]
+          new_hash[lang][:style] << style
+        else
         new_hash[lang] = {
           type: typev,
-          style: []
+          style: [style]
         }
-        new_hash[lang][:style] << style
+
       end
     end
   end
