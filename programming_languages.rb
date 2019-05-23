@@ -10,6 +10,7 @@ def reformat_languages(languages)
           type: typev,
           style: [style]
         }
+        end
 
       end
     end
